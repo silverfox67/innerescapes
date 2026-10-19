@@ -36,7 +36,7 @@ export default function InnerEscapesPage() {
           The practical system for clearing high-velocity cognitive noise, eliminating decision fatigue, and protecting deep mental reserves in demanding environments.
         </p>
 
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-14">
           <a
             href="#access"
             className="w-full sm:w-auto px-8 py-3.5 bg-[#2D4A3E] hover:bg-[#22382F] text-[#FAF8F5] text-sm font-medium tracking-wide rounded shadow-sm transition-all text-center"
@@ -49,6 +49,26 @@ export default function InnerEscapesPage() {
           >
             Read the Field Notes
           </a>
+        </div>
+
+        {/* Hero Tactile Journal Image Container */}
+        <div className="max-w-3xl mx-auto rounded-xl overflow-hidden border border-[#E8E4DC] shadow-sm bg-white p-2">
+          <div className="relative aspect-[16/9] w-full overflow-hidden rounded-lg bg-[#F2ECE1]">
+            <img
+              src="/images/hero-journal.jpg"
+              alt="Quiet morning field journal and coffee on linen"
+              className="w-full h-full object-cover"
+              loading="eager"
+            />
+          </div>
+          <div className="py-3 px-4 flex items-center justify-between text-left border-t border-[#F2ECE1] mt-2">
+            <span className="text-[11px] font-mono uppercase tracking-widest text-[#7E786E]">
+              Artifact 01: Analog Morning Audit
+            </span>
+            <span className="text-[11px] font-mono text-[#2D4A3E]">
+              Included in Core Archive
+            </span>
+          </div>
         </div>
 
         {/* Minimal Provenance Bar */}
@@ -127,6 +147,22 @@ export default function InnerEscapesPage() {
             <p className="text-sm text-[#6B665E] mt-2">
               Fulfilled via cryptographically signed single-use claim tokens.
             </p>
+          </div>
+
+          {/* 3D Tangible Linen Guide Mockup Frame */}
+          <div className="max-w-md mx-auto mb-12 rounded-xl overflow-hidden border border-[#E8E4DC] shadow-sm bg-white p-2">
+            <div className="relative aspect-[4/3] w-full overflow-hidden rounded-lg bg-[#FAF8F5]">
+              <img
+                src="/images/guide-mockup.png"
+                alt="Inner Escapes Executive Cognitive Hygiene Field Guide Volume I Mockup"
+                className="w-full h-full object-cover"
+                loading="lazy"
+              />
+            </div>
+            <div className="py-2.5 px-3 flex items-center justify-between text-left border-t border-[#F2ECE1] mt-1 text-[11px] font-mono text-[#7E786E]">
+              <span>Artifact 02: Linen-Bound Edition Archive</span>
+              <span className="text-[#2D4A3E] font-medium">Digital + Audio Asset</span>
+            </div>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-3xl mx-auto">
