@@ -88,10 +88,14 @@ export const onRequestGet: PagesFunction<Env> = async (context) => {
     let signedUrl: string | null = null;
     let successfulBucket = "";
 
+    const cleanPath = (record.storage_path || "")
+      .replace(/^digital-vault\//, "")
+      .replace(/^digital-products\//, "");
+
     for (const b of candidateBuckets) {
       if (signedUrl) break;
       try {
-        const signEndpoint = `${supabaseUrl}/storage/v1/object/sign/${b}/${record.storage_path}`;
+        const signEndpoint = `${supabaseUrl}/storage/v1/object/sign/${b}/${cleanPath}`;
         const signRes = await fetch(signEndpoint, {
           method: "POST",
           headers,
