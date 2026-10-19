@@ -2,82 +2,81 @@ import React from "react";
 
 export function Footer() {
   return (
-    <footer className="border-t border-midnight-700/80 bg-midnight-950 py-12 text-gray-400 text-xs">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+    <footer className="bg-[#0c0d0e] py-16 text-zinc-400 text-xs font-mono">
+      <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-10 mb-12">
           {/* Brand Info */}
-          <div className="md:col-span-2">
+          <div className="md:col-span-6">
             <div className="flex items-center gap-2 mb-3">
-              <div className="h-7 w-7 rounded bg-gradient-to-br from-glacier-500 to-midnight-800 flex items-center justify-center font-mono font-bold text-glacier-400 text-xs">
+              <div className="h-6 w-6 rounded border border-white/10 bg-[#16171b] flex items-center justify-center font-serif text-stone-200 text-xs font-semibold">
                 IE
               </div>
-              <span className="font-bold text-white text-base">InnerEscapes</span>
+              <span className="font-serif text-sm font-normal text-stone-200">InnerEscapes</span>
             </div>
-            <p className="max-w-md text-gray-400 leading-relaxed mb-4">
-              A specialized digital spoke within the Trident Digital Network. Commercial-grade
-              neuro-habit systems, temporal time-blocking frameworks, and cognitive focus engineering.
+            <p className="text-zinc-400 leading-relaxed max-w-sm mb-4 font-sans text-xs">
+              A specialized digital spoke within the Trident Digital Network. Structured systems
+              for calm, uninterrupted focus, operational time-blocking, and daily executive clarity.
             </p>
-            <div className="text-[11px] font-mono text-gray-400">
-              OPERATIONAL HUB:{" "}
+            <div className="text-[11px] text-zinc-500">
+              NETWORK HUB:{" "}
               <a
                 href="https://weselldigital.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-glacier-400 hover:underline"
+                className="text-stone-300 hover:underline"
               >
                 weselldigital.com
               </a>
             </div>
           </div>
 
-          {/* Direct Navigation */}
-          <div>
-            <h4 className="text-white font-semibold uppercase tracking-wider text-[11px] font-mono mb-3">
-              Architecture Navigation
-            </h4>
-            <ul className="space-y-2">
+          {/* Navigation */}
+          <div className="md:col-span-3">
+            <div className="uppercase tracking-widest text-[11px] text-stone-300 font-semibold mb-3">
+              Index
+            </div>
+            <ul className="space-y-2 text-zinc-400">
               <li>
-                <a href="#framework" className="hover:text-white transition-colors">
-                  Diagnostic Framework
+                <a href="#framework" className="hover:text-stone-200 transition-colors">
+                  Diagnostic List
                 </a>
               </li>
               <li>
-                <a href="#calculator" className="hover:text-white transition-colors">
-                  Focus Yield Calculator
+                <a href="#calculator" className="hover:text-stone-200 transition-colors">
+                  Assessment Ledger
                 </a>
               </li>
               <li>
-                <a href="#system" className="hover:text-white transition-colors">
-                  Habit Pillars
+                <a href="#system" className="hover:text-stone-200 transition-colors">
+                  System Protocols
                 </a>
               </li>
               <li>
-                <a href="#pricing" className="hover:text-white transition-colors">
-                  Vault Pricing
+                <a href="#pricing" className="hover:text-stone-200 transition-colors">
+                  Toolkit Packages
                 </a>
               </li>
               <li>
-                <a href="#faq" className="hover:text-white transition-colors">
-                  Technical FAQ
+                <a href="#faq" className="hover:text-stone-200 transition-colors">
+                  Inquiries
                 </a>
               </li>
             </ul>
           </div>
 
-          {/* Legal & Billing */}
-          <div>
-            <h4 className="text-white font-semibold uppercase tracking-wider text-[11px] font-mono mb-3">
-              Billing & Compliance
-            </h4>
-            <p className="text-[11px] text-gray-400 leading-relaxed mb-3">
-              All transactions are secured via 256-bit encryption. Charges reflect as{" "}
-              <strong className="text-gray-300">TRIDENT* INNERSCAPE</strong>.
+          {/* Compliance */}
+          <div className="md:col-span-3">
+            <div className="uppercase tracking-widest text-[11px] text-stone-300 font-semibold mb-3">
+              Compliance
+            </div>
+            <p className="text-[11px] text-zinc-500 leading-relaxed mb-3">
+              Charges reflect as <strong className="text-stone-300 font-normal">TRIDENT* INNERSCAPE</strong>.
             </p>
-            <p className="text-[11px] text-gray-400 leading-relaxed">
-              Technical support and claim token queries:{" "}
+            <p className="text-[11px] text-zinc-500 leading-relaxed">
+              Inquiries:{" "}
               <a
                 href="mailto:support@weselldigital.com"
-                className="text-glacier-400 hover:underline"
+                className="text-stone-300 hover:underline"
               >
                 support@weselldigital.com
               </a>
@@ -85,20 +84,19 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="pt-8 border-t border-midnight-800 flex flex-col sm:flex-row items-center justify-between gap-4 text-[11px] text-gray-400">
+        <div className="pt-8 border-t border-white/[0.08] flex flex-col sm:flex-row items-center justify-between gap-4 text-[11px] text-zinc-500">
           <div>
-            &copy; {new Date().getFullYear()} innerescapes.com &bull; All rights reserved. Billing and
-            fulfillment operated by Trident Website Design.
+            &copy; {new Date().getFullYear()} innerescapes.com &bull; Billing & technical fulfillment operated by Trident Website Design.
           </div>
           <div className="flex gap-6">
-            <a href="#" className="hover:text-gray-300">
-              Privacy Policy
+            <a href="#" className="hover:text-stone-300">
+              Privacy
             </a>
-            <a href="#" className="hover:text-gray-300">
-              Terms of Service
+            <a href="#" className="hover:text-stone-300">
+              Terms
             </a>
-            <a href="#" className="hover:text-gray-300">
-              Vault Delivery Policy
+            <a href="#" className="hover:text-stone-300">
+              Vault Policy
             </a>
           </div>
         </div>

@@ -2,60 +2,55 @@ import React from "react";
 
 export function PricingMatrix() {
   return (
-    <section id="pricing" className="py-20 border-t border-midnight-700/60 bg-midnight-950">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="mx-auto max-w-3xl text-center mb-16">
-          <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-focus-500/10 border border-focus-500/20 text-xs font-mono text-focus-400 mb-3">
-            VAULT ACCESS PACKAGES
+    <section id="pricing" className="py-20 md:py-28 border-b border-white/[0.08]">
+      <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+        <div className="mb-16">
+          <div className="text-xs font-mono tracking-widest uppercase text-zinc-400 mb-3">
+            Acquisition // One-Time Delivery
           </div>
-          <h2 className="text-3xl sm:text-4xl font-extrabold tracking-tight text-white mb-4">
-            Invest in Your Prefrontal Focus Infrastructure
+          <h2 className="text-3xl sm:text-4xl font-serif font-normal tracking-tight text-stone-100 mb-4">
+            Immediate Access & Lifetime Toolkit
           </h2>
-          <p className="text-base sm:text-lg text-gray-300 leading-relaxed">
-            One-time payment. Zero recurring subscriptions. Instant digital entitlement delivered
-            through our secure edge vault within 60 seconds of checkout.
+          <p className="text-base text-stone-300 leading-relaxed font-sans max-w-2xl">
+            Single one-time payment. Zero recurring subscriptions. Instant digital entitlement
+            delivered directly through our secure edge vault immediately upon checkout.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-5xl mx-auto items-stretch">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-stretch">
           {/* Tier 1: Foundation ($17) */}
-          <div className="rounded-2xl border border-midnight-700 bg-midnight-900/60 p-8 flex flex-col justify-between">
+          <div className="rounded border border-white/[0.08] bg-[#121316] p-8 flex flex-col justify-between">
             <div>
-              <div className="flex justify-between items-center mb-4">
-                <span className="text-xs font-mono uppercase tracking-wider text-gray-400 font-semibold">
-                  Starter Kit
-                </span>
-                <span className="text-xs font-mono text-gray-400 px-2 py-0.5 rounded bg-midnight-800">
-                  Instant Vault Download
-                </span>
+              <div className="text-[11px] font-mono tracking-widest uppercase text-zinc-400 mb-3">
+                Starter Manual
               </div>
-              <h3 className="text-2xl font-bold text-white mb-2">
-                Dopamine & Focus Reset Planner
+              <h3 className="text-xl font-serif font-normal text-stone-100 mb-2">
+                Focus & Clarity Reset Planner
               </h3>
-              <p className="text-sm text-gray-400 mb-6">
+              <p className="text-xs text-stone-400 font-sans leading-relaxed mb-6">
                 The essential 72-hour reset manual and printable daily focus sheets for individuals
                 seeking rapid baseline recovery.
               </p>
 
               <div className="flex items-baseline gap-2 mb-8">
-                <span className="text-4xl font-black font-mono text-white">$17</span>
-                <span className="text-xs text-gray-400 uppercase font-mono">One-Time Payment</span>
+                <span className="font-serif text-3xl font-normal text-stone-100">$17</span>
+                <span className="text-[11px] font-mono text-zinc-400 uppercase">One-time payment</span>
               </div>
 
-              <div className="space-y-3 text-xs text-gray-300 font-mono mb-8">
-                <div className="flex items-center gap-2">
-                  <span className="text-glacier-400 font-bold">&#10003;</span>
-                  <span>72-Hour Neurochemical Reset Field Guide (PDF)</span>
+              <div className="space-y-3 text-xs font-mono text-stone-300 mb-8 border-t border-white/[0.08] pt-6">
+                <div className="flex items-center gap-2.5">
+                  <span className="text-stone-400">&mdash;</span>
+                  <span>72-Hour Attention Reset Field Guide (PDF)</span>
                 </div>
-                <div className="flex items-center gap-2">
-                  <span className="text-glacier-400 font-bold">&#10003;</span>
-                  <span>Printable Analog Daily Planning Sheets (Zero-Screen)</span>
+                <div className="flex items-center gap-2.5">
+                  <span className="text-stone-400">&mdash;</span>
+                  <span>Printable Analog Daily Planning Sheets</span>
                 </div>
-                <div className="flex items-center gap-2">
-                  <span className="text-glacier-400 font-bold">&#10003;</span>
-                  <span>Emergency Craving-Suppression Checklist</span>
+                <div className="flex items-center gap-2.5">
+                  <span className="text-stone-400">&mdash;</span>
+                  <span>Emergency Craving & Interruption Checklist</span>
                 </div>
-                <div className="flex items-center gap-2 text-gray-500">
+                <div className="flex items-center gap-2.5 text-zinc-500">
                   <span>&times;</span>
                   <span>No Notion Sprint Vault or Calendar Templates</span>
                 </div>
@@ -65,67 +60,61 @@ export function PricingMatrix() {
             <div>
               <a
                 href="#checkout-tier1"
-                className="w-full inline-flex items-center justify-center gap-2 rounded-xl border border-midnight-700 bg-midnight-800/80 py-3.5 text-sm font-semibold text-gray-200 hover:border-glacier-500/40 hover:text-white transition-all active:scale-98"
+                className="w-full inline-flex items-center justify-center gap-2 rounded border border-white/10 bg-white/[0.03] py-3 text-xs font-mono uppercase tracking-wider text-stone-300 hover:border-white/20 hover:text-white transition-colors"
               >
-                <span>Unlock Starter Kit ($17)</span>
+                <span>Acquire Starter Kit ($17)</span>
               </a>
             </div>
           </div>
 
-          {/* Tier 2: Complete Architecture ($29 - Recommended) */}
-          <div className="rounded-2xl border-2 border-glacier-500/80 bg-gradient-to-b from-midnight-900 to-midnight-950 p-8 flex flex-col justify-between relative shadow-2xl shadow-glacier-500/10">
-            {/* Recommended Badge */}
-            <div className="absolute -top-3.5 right-6 bg-gradient-to-r from-glacier-500 to-focus-500 text-midnight-950 text-xs font-mono font-black uppercase px-3 py-1 rounded-full shadow-md">
-              Most Popular // Complete System
+          {/* Tier 2: Complete Architecture ($29) */}
+          <div className="rounded border border-stone-600 bg-[#16171b] p-8 flex flex-col justify-between relative">
+            <div className="absolute -top-3 right-6 bg-stone-100 text-stone-950 text-[10px] font-mono uppercase tracking-widest font-bold px-2.5 py-0.5 rounded">
+              Complete System
             </div>
 
             <div>
-              <div className="flex justify-between items-center mb-4">
-                <span className="text-xs font-mono uppercase tracking-wider text-glacier-400 font-bold">
-                  Executive Suite
-                </span>
-                <span className="text-xs font-mono text-focus-400 px-2 py-0.5 rounded bg-focus-500/10 border border-focus-500/20">
-                  Full Vault Entitlement
-                </span>
+              <div className="text-[11px] font-mono tracking-widest uppercase text-zinc-400 mb-3">
+                Executive Suite
               </div>
-              <h3 className="text-2xl font-bold text-white mb-2">
-                Complete Neuro-Habit Architecture System
+              <h3 className="text-xl font-serif font-normal text-stone-100 mb-2">
+                Complete Executive Focus Architecture
               </h3>
-              <p className="text-sm text-gray-300 mb-6">
-                The comprehensive operating system: field manual, Notion sprint dashboard, calendar
-                automation templates, and binaural focus audio tracks.
+              <p className="text-xs text-stone-300 font-sans leading-relaxed mb-6">
+                The comprehensive operating system: field manual, Notion sprint dashboard,
+                calendar automation templates, and lossless focus audio tracks.
               </p>
 
               <div className="flex items-baseline gap-2 mb-8">
-                <span className="text-4xl font-black font-mono text-glacier-400">$29</span>
-                <span className="text-xs text-gray-400 uppercase font-mono">One-Time Payment</span>
-                <span className="text-xs text-gray-400 line-through font-mono ml-2">$97 Value</span>
+                <span className="font-serif text-3xl font-normal text-stone-100">$29</span>
+                <span className="text-[11px] font-mono text-zinc-400 uppercase">One-time payment</span>
+                <span className="text-xs font-mono text-zinc-500 line-through ml-2">$97 Value</span>
               </div>
 
-              <div className="space-y-3 text-xs text-gray-300 font-mono mb-8">
-                <div className="flex items-center gap-2">
-                  <span className="text-focus-400 font-bold">&#10003;</span>
-                  <span>72-Hour Neurochemical Reset Field Guide (Full Edition)</span>
+              <div className="space-y-3 text-xs font-mono text-stone-300 mb-8 border-t border-white/[0.08] pt-6">
+                <div className="flex items-center gap-2.5">
+                  <span className="text-stone-400">&mdash;</span>
+                  <span>72-Hour Attention Reset Field Guide (Full)</span>
                 </div>
-                <div className="flex items-center gap-2">
-                  <span className="text-focus-400 font-bold">&#10003;</span>
-                  <span>Deep-Work Chrono-Matrix (.ics Calendar Templates)</span>
+                <div className="flex items-center gap-2.5">
+                  <span className="text-stone-400">&mdash;</span>
+                  <span>Deep-Work Chrono-Matrix (.ics Templates)</span>
                 </div>
-                <div className="flex items-center gap-2">
-                  <span className="text-focus-400 font-bold">&#10003;</span>
-                  <span>Notion Executive Sprint Vault & KPI Dashboard</span>
+                <div className="flex items-center gap-2.5">
+                  <span className="text-stone-400">&mdash;</span>
+                  <span>Notion Executive Sprint Vault & KPI Tracker</span>
                 </div>
-                <div className="flex items-center gap-2">
-                  <span className="text-focus-400 font-bold">&#10003;</span>
-                  <span>OS System Fencing Guides (Mac & Windows Setup)</span>
+                <div className="flex items-center gap-2.5">
+                  <span className="text-stone-400">&mdash;</span>
+                  <span>OS System Fencing Guides (Mac & Windows)</span>
                 </div>
-                <div className="flex items-center gap-2">
-                  <span className="text-focus-400 font-bold">&#10003;</span>
-                  <span>3 Binaural Beta/Gamma Audio Focus Tracks (Lossless)</span>
+                <div className="flex items-center gap-2.5">
+                  <span className="text-stone-400">&mdash;</span>
+                  <span>3 High-Bitrate Focus Audio Calibration Tracks</span>
                 </div>
-                <div className="flex items-center gap-2">
-                  <span className="text-focus-400 font-bold">&#10003;</span>
-                  <span>Lifetime Vault Access & Free Future Updates</span>
+                <div className="flex items-center gap-2.5">
+                  <span className="text-stone-400">&mdash;</span>
+                  <span>Lifetime Vault Access & Version Updates</span>
                 </div>
               </div>
             </div>
@@ -133,24 +122,21 @@ export function PricingMatrix() {
             <div>
               <a
                 href="#checkout-tier2"
-                className="w-full inline-flex items-center justify-center gap-2 rounded-xl bg-glacier-500 py-4 text-base font-bold text-midnight-950 hover:bg-glacier-400 transition-all shadow-lg shadow-glacier-500/25 active:scale-98"
+                className="w-full inline-flex items-center justify-center gap-2 rounded border border-stone-200 bg-stone-100 py-3 text-xs font-mono uppercase tracking-wider font-semibold text-stone-950 hover:bg-stone-200 transition-colors"
               >
-                <span>Unlock Complete Architecture ($29)</span>
-                <svg className="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                </svg>
+                <span>Acquire Complete System ($29)</span>
+                <span>&rarr;</span>
               </a>
             </div>
           </div>
         </div>
 
-        {/* Statement Disclosure & Security Notice */}
-        <div className="mt-12 max-w-3xl mx-auto rounded-xl border border-midnight-700 bg-midnight-900/40 p-4 text-center">
-          <p className="text-xs text-gray-400 leading-relaxed font-mono">
-            🔒 <strong className="text-gray-300">Billing Disclosure:</strong> Charges will appear as{" "}
-            <span className="text-glacier-400 font-semibold">TRIDENT* INNERSCAPE</span> on your statement.
-            Fulfillment is handled automatically through our Cloudflare Pages edge delivery vault.
-            Backed by our 30-day cognitive satisfaction guarantee.
+        {/* Statement Disclosure */}
+        <div className="mt-12 rounded border border-white/[0.08] bg-[#0c0d0e] p-4 text-center">
+          <p className="text-xs font-mono text-zinc-400 leading-relaxed">
+            Billing Notice: Charges will appear as <strong className="text-stone-200">TRIDENT* INNERSCAPE</strong> on your bank statement.
+            Fulfillment is executed automatically through our secure edge delivery vault.
+            Backed by a 30-day satisfaction guarantee.
           </p>
         </div>
       </div>

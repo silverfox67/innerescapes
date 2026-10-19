@@ -2,16 +2,15 @@ import type { Metadata, Viewport } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "InnerEscapes | Neuro-Habit Architecture & Dopamine Reset System",
+  title: "InnerEscapes | A Structured System for Unbroken Executive Focus",
   description:
-    "Eliminate brain fog, chronic context switching, and low-energy habit loops. Commercial-grade neuro-reset framework, deep-work schedule matrices, and digital habit dashboards.",
+    "A deliberate, quiet operational system for sustained mental clarity and focused work. Field manuals, deep-work schedule architectures, and digital sprint frameworks.",
   keywords: [
-    "neuro habit architecture",
-    "dopamine reset protocol",
+    "executive focus system",
     "deep work schedule template",
-    "habit loop design",
-    "executive focus framework",
     "mental clarity dashboard",
+    "focus habit system",
+    "operational time blocking",
     "context switching reduction",
   ],
   authors: [{ name: "innerescapes.com" }],
@@ -22,9 +21,9 @@ export const metadata: Metadata = {
     follow: true,
   },
   openGraph: {
-    title: "InnerEscapes | Neuro-Habit Architecture & Dopamine Reset System",
+    title: "InnerEscapes | A Structured System for Unbroken Executive Focus",
     description:
-      "A systematic, friction-free cognitive protocol for deep focus and sustainable daily productivity.",
+      "A deliberate operational system for sustained mental clarity and uninterrupted focus.",
     url: "https://innerescapes.com",
     siteName: "innerescapes.com",
     locale: "en_US",
@@ -32,15 +31,15 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "InnerEscapes | Neuro-Habit Architecture",
-    description: "Reclaim 3+ hours of focused deep-work daily with zero burnout.",
+    title: "InnerEscapes | A Structured System for Unbroken Executive Focus",
+    description: "Daily operational protocols for sustained, calm deep work.",
   },
 };
 
 export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
-  themeColor: "#070A0F",
+  themeColor: "#0c0d0e",
 };
 
 export default function RootLayout({
@@ -51,9 +50,9 @@ export default function RootLayout({
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "Product",
-    name: "The Complete Neuro-Habit Architecture & Dopamine Reset System",
+    name: "InnerEscapes Executive Focus System",
     description:
-      "A complete operational system designed to calibrate dopamine baselines, protect deep-work hours, and install friction-free daily productivity loops.",
+      "A complete operational system designed to protect deep-work hours and install calm, repeatable daily focus routines.",
     brand: {
       "@type": "Brand",
       name: "InnerEscapes",
@@ -67,7 +66,7 @@ export default function RootLayout({
       offers: [
         {
           "@type": "Offer",
-          name: "The Dopamine & Focus Reset Planner",
+          name: "The Focus & Clarity Reset Planner",
           price: "17.00",
           priceCurrency: "USD",
           availability: "https://schema.org/InStock",
@@ -75,7 +74,7 @@ export default function RootLayout({
         },
         {
           "@type": "Offer",
-          name: "The Complete Neuro-Habit Architecture System",
+          name: "The Complete Executive Focus Architecture",
           price: "29.00",
           priceCurrency: "USD",
           availability: "https://schema.org/InStock",
@@ -93,7 +92,7 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
       </head>
-      <body className="bg-midnight-950 text-gray-200 antialiased min-h-screen flex flex-col selection:bg-glacier-500/20 selection:text-glacier-400">
+      <body className="bg-[#0c0d0e] text-stone-200 antialiased min-h-screen flex flex-col selection:bg-stone-700/40 selection:text-stone-100">
         {children}
       </body>
     </html>
